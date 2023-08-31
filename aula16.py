@@ -6,8 +6,8 @@
 # for comida in lanche:
 #    print('Eu vou comer {}'.format(comida))
 
-for cont in range(0, len(lanche)):
-    print('Eu vou comer {} na posição {}'.format(lanche[cont], cont))
+# for cont in range(0, len(lanche)):
+#    print('Eu vou comer {} na posição {}'.format(lanche[cont], cont))
 
 # for pos, comida in enumerate(lanche):
 #    print('Eu vou comer {} na posição {}'.format(comida, pos))

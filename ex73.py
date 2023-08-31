@@ -1,1 +1,7 @@
-teste
+times = ('Botafogo', 'Palmeiras', 'Grêmio', 'Flamengo', 'Fluminense', 'Bragantino', 'Athletico-PR', 'Fortaleza', 'Atlético-MG', 'Cuiabá', 'São Paulo', 'Cruzeiro', 'Corinthians', 'Internacional', 'Goiás', 'Bahia', 'Santos', 'Vasco da Gama', 'Coritiba', 'América-MG')
+print('Lista de times do Brasileirão: {}'.format(times))
+print('Os 5 primeiros são {}'.format(times[:5]))
+print('Os 4 últimos são {}'.format(times[16:]))
+print('Times em ordem alfabética: {}'.format(sorted(times)))
+posição = times.index('São Paulo')
+print('O São Pulo está na {}ª posição'.format(posição+1))
