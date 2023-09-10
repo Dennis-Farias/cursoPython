@@ -12,7 +12,6 @@ while resp == 'S':
     resp = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     if resp == 'N':
         break
-
 print('-=' * 30)
 print('A lista completa é {}'.format(numeros))
 print('A lista de pares é {}'.format(numerospares))
