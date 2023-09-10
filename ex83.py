@@ -1,20 +1,15 @@
-aberto = False
-fechamento = False
-expressao = str(input('Digite a expressão: '))
-for c in range(len(expressao)):
-    abertura = expressao[c]
-    if abertura == '(':
-        aberto = True
-        c += 1
-    elif abertura == ')':
-        if aberto == False:
-            print('Sua expressão está errada!')
+expressao = str(input('Digite uma expressão: '))
+pilha = []
+for simbolo in expressao:
+    if simbolo == '(':
+        pilha.append('(')
+    elif simbolo == ')':
+        if len(pilha) > 0:
+            pilha.pop()
         else:
-            print('Sua expressão está válida!')
-            fechamento = True
-            c += 1
-if aberto == True and fechamento == False:
-    print('Sua expressão está errada!')
-elif fechamento == False:
-    print('Sua expressão está errada!')
-    
+            pilha.append(')')
+            break
+if len(pilha) == 0:
+    print('Sua expressão está válida!')
+else:
+    print('Sua expressão está errada!')    
