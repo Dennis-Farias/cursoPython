@@ -14,8 +14,8 @@ while len(jogos) < numjogos:
     bilhete.sort()
     jogos.append(bilhete[:])
     bilhete.clear()
-print('{:=^30}'.format(' SORTEANDO {} JOGOS ').format(numjogos))
+print('-=' * 3, f' SORTEANDO {numjogos} JOGOS ', '-=' * 3)
 for c in range(0, len(jogos)):
     print('Jogo {}: {}'.format(c+1, jogos[c]))
     sleep(1)
-print('{:-^30}'.format(' < BOA SORTE! > '))
+print('-=' * 5, '< BOA SORTE! >', '-=' * 5)
