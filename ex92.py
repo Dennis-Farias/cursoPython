@@ -13,4 +13,4 @@ if ficha['ctps'] != 0 and ficha['ctps'] > 0:
 del ficha['nasc']
 print('-=' * 30)
 for k, v in ficha.items():
-    print(f'{k} tem o valor {v}')
+    print(f'  - {k} tem o valor {v}')
