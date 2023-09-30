@@ -6,13 +6,16 @@ def contador(inicio, fim, passo):
         passo += 1
     print('-=' * 20)
     print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
+    sleep(2)
     if fim < inicio:
         fim -= 1
         passo = -passo
     else:
         fim += 1   
     for c in range(inicio, fim, passo):
-        print(f'{c} ', end='') 
+        print(f'{c} ', end='', flush=True) 
+        sleep(0.5)
+        # flush=True, para ele esperar 0.5s a cada repetição
     print('FIM!')
 
 contador(1,10,1)
