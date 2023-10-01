@@ -3,7 +3,8 @@ def maior(*num):
     print('-=' * 30)
     print('Analisando os valores passados...')
     for c in range(len(num)):
-        print(f'{num[c]} ',end='')
+        print(f'{num[c]} ',end='', flush=True)
+        sleep(0.5)
         if c == 0:
             maior = num[c]
         else:
