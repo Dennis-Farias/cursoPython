@@ -16,6 +16,5 @@ def diminuir(n, porc):
     n -= porc
     return n
 
-def moeda(n):
-    n = f'R${n:.2f}'
-    return n
+def moeda(n, moeda='R$'):
+    return f'{moeda}{n:>.2f}'.replace('.', ',')
